@@ -1,0 +1,22 @@
+{
+    "name": "node.gitlab",
+    "version": "0.0.1",
+    "description": "nodejs library of gitlab API.",
+    "main": "index.js",
+    "homepage": "https://github.com/wiky/node.gitlab.git",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:wiky/node.gitlab.git"
+    },
+    "keywords": [
+        "node gitlab",
+        "gitlab"
+    ],
+    "dependencies": {
+        "node.restful.client": "*"
+    },
+    "author": {
+        "name": "wiky",
+        "email": "wiky@f2e.cc"
+    }
+}
