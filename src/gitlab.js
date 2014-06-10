@@ -21,20 +21,11 @@ var Gitlab = function(config) {
     });
 };
 
-var deepRegister = function(target, obj){
-    for (var k in obj) {
-        if (obj.hasOwnProperty(k) && k !== '$path') {
-            deepRegister(target.register(obj[k].$path, k), obj[k]);
-        }
-    }
-};
-
 nodeUtil.inherits(Gitlab, RestClient);
 
 module.exports.create = function(config) {
     var gitlab = new Gitlab(config);
 
-    //deepRegister(gitlab, api);
     gitlab.registerAll(api);
 
     return gitlab;
