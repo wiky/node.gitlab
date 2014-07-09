@@ -1,8 +1,8 @@
 var Gitlab = require('./index.js');
 
 var gitlab = Gitlab.create({
-	api: 'https://gitlab.com/api/v3',
-	private_token: 'e7zpqXbpAz6xkmnQgJpb'
+	api: 'https://gitlab.com/api/v3', // http(s)://your-gitlab-domain/api/v3
+	private_token: 'e7zpqXbpAz6xkmnQgJpb' // http(s)://your-gitlab-domain/profile/account
 });
 
 // https://gitlab.com/help/api/projects#list-owned-projects
